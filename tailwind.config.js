@@ -2,11 +2,14 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}", // Asegúrate de incluir extensiones TS y TSX
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"PT Sans"', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
-

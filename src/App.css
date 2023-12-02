@@ -13,6 +13,10 @@ body {
   height: 100vh;
 }
 
+html {
+  @apply text-cyan-950;
+}
+
 #app {
   width: 100%;
   height: 100%;
@@ -20,4 +24,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* color de fondo de la pista del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #93c5fd; /* color del thumb */
+  border-radius: 9999px; /* redondeado del thumb */
+  border: 3px solid transparent; /* espacio entre el thumb y la pista */
+  background-clip: content-box; /* para asegurarse de que el borde transparente no se cubra */
+}
+
+/* Estilos para Firefox */
+* {
+  scrollbar-width: thin; /* ancho del scrollbar */
+  scrollbar-color: #93c5fd transparent; /* color del thumb y de la pista */
 }
