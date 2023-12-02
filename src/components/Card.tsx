@@ -35,9 +35,10 @@ const Card: React.FC<CardProps> = ({ children }) => {
   return (
     <div
       ref={cardRef}
-      className={`border-solid border-8 rounded-3xl bg-stone-400 p-4 flex items-center justify-center gap-4 flex-col w-full h-full min-h-full transition-transform duration-500 ease-in-out ${
+      className={`rounded-3xl bg-white p-4 flex items-center justify-center gap-4 flex-col w-full h-full min-h-full max-h-full transition-transform duration-500 ease-in-out bg-opacity-90 ${
         isVisible ? 'translate-x-0' : 'translate-x-full'
       }`}
+      style={{ animation: isVisible ? 'animation-border 2s linear forwards' : '' }}
     >
       {children}
     </div>

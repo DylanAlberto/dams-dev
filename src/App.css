@@ -46,3 +46,26 @@ html {
   scrollbar-width: thin; /* ancho del scrollbar */
   scrollbar-color: #93c5fd transparent; /* color del thumb y de la pista */
 }
+
+
+@keyframes animation-border {
+  0% {
+    border-color: transparent;
+    border-width: 10px;
+  }
+  25% {
+    border-top: 10px solid #000;
+  }
+  50% {
+    border-top: 10px solid #000;
+    border-right: 10px solid #000;
+  }
+  75% {
+    border-top: 10px solid #000;
+    border-right: 10px solid #000;
+    border-bottom: 10px solid #000;
+  }
+  100% {
+    border: 10px solid #000;
+  }
+}

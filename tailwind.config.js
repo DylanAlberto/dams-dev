@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: ['"PT Sans"', 'sans-serif']
       },
+      colors: {
+        border: '#000000',
+      },
     },
   },
   plugins: [],
