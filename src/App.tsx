@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 import Intro from './components/sections/Intro';
 import Hello from './components/sections/Hello';
 import Skills from './components/sections/Skills';
-import Technologies from './components/sections/Technologies';
+import Background from './components/sections/Background';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Intro/>
       <Hello/>
       <Skills/>
-      <Technologies/>
+      <Background/>
     </Layout>
   );
 }

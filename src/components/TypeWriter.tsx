@@ -7,7 +7,7 @@ interface TypewriterEffectProps {
   className?: string;
 }
 
-const TypewriterEffect: React.FC<TypewriterEffectProps> = ({ text, typingDelay = 80, className }) => {
+const TypewriterEffect: React.FC<TypewriterEffectProps> = ({ text, typingDelay = 30, className }) => {
   return (
     <div className={`${className} w-full md:w-2/3`}>
       <Typewriter
