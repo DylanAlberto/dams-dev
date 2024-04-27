@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({ children }) => {
       }`}
       style={{ animation: isVisible ? 'animation-border 2s linear forwards' : '' }}
     >
-      {isVisible && children}
+      {children}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 interface Props {
   photo: string;
   title?: string;
-  url?: string; // Added URL prop
+  url?: string;
 }
 
 const PhotoCarousel: React.FC<Props> = ({ photo, title, url }) => {
@@ -13,7 +13,7 @@ const PhotoCarousel: React.FC<Props> = ({ photo, title, url }) => {
         href={url ? url : '#'}
         target={url ? '_blank' : '_self'}
         rel="noopener noreferrer"
-        className='w-20 h-20 md:w-40 md:h-40'
+        className="w-20 h-20 md:w-40 md:h-40"
         style={{
           cursor: url ? 'pointer' : 'default',
         }}
@@ -21,10 +21,14 @@ const PhotoCarousel: React.FC<Props> = ({ photo, title, url }) => {
         <img
           src={photo}
           alt={photo}
-          className={`w-full h-full rounded-3xl border-solid border-2 border-black ${url ? 'hover:scale-105' : ''}`}
+          className={`object-contain bg-white w-full h-full rounded-3xl border-solid border-2 border-black ${
+            url ? 'hover:scale-105' : ''
+          }`}
         />
       </a>
-      {title && <span className="text-base font-bold text-center flex gap-4 md:text-2xl">{title}</span>}
+      {title && (
+        <span className="text-base font-bold text-center flex gap-4 md:text-2xl">{title}</span>
+      )}
     </div>
   );
 };
